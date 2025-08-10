@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Copy, Network, Search, Shield, Wallet } from "lucide-react";
+import { ArrowLeft, ArrowRight, Copy, Search, Shield, Wallet } from "lucide-react";
 import { useState } from "react"
 import { getethBalance, getTransactionCount, isContract, getBlockNumber, getSolBalance, getSolLatestBlock, getSolTransactionCount,getSolisContract } from "./utils/rpc";
 
@@ -135,6 +135,14 @@ function App() {
             </div>
           </div>
         </div>
+        
+        {/* Footer */}
+        <footer className="py-6 text-center">
+          <p className="text-gray-500 text-sm">
+            Designed and developed with ❤️ by{" "}
+            <span className="text-white font-medium">Puranpal Singh</span>
+          </p>
+        </footer>
       </div>
     )
 
@@ -254,8 +262,16 @@ function App() {
             
           </div>
         </div>
+        
+        {/* Footer */}
+        <footer className="py-6 text-center">
+          <p className="text-gray-500 text-sm">
+            Designed and developed with ❤️ by{" "}
+            <span className="text-white font-medium">Puranpal Singh</span>
+          </p>
+        </footer>
       </div>
-    )
+  )
 }
 
 export default App
